@@ -66,7 +66,7 @@ Publish the website in the given URL.
 </html>
 
 ```
-## triangle.html
+## trianglearea.html
 ```
 {% load static %}
 <!DOCTYPE html>
