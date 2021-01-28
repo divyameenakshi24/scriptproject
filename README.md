@@ -1,6 +1,6 @@
 # Mathematical Calculations using JavaScript
 ## AIM:
-To design a website to calculate the area of a circle and volume of a cylinder using JavaScript.
+To design a website to calculate the volume of a cylinder and area of triangle using JavaScript.
 
 ## DESIGN STEPS:
 ### Step 1: 
