@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VOLUME OF THE CYLINDER</title>
+    <link rel="stylesheet" href="{% static 'css/bts.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formview">
+            <div class="banner">
+                VOLUME OF THE CYLINDER
+            </div>
+            <div class="content">
+                <form action="/cylindervolume/" method="POST">
+                    {% csrf_token %}
+                    <div class="forminput">
+                        <label for="value_a">Radius=</label>
+                        <input type="text" name="value_a" id="value_a" value ="{{a}}">
+                    </div>
+                    <div  class="forminput">
+                        <label for="value_b">Height=</label>
+                        <input type="text" name="value_b" id="value_b" value ="{{b}}">
+                    </div>                    
+                    <div class="forminput">
+                        <button type="button" name="button_add" id="button_add">Calculate Volume</button>
+                    </div>
+                    <div  class="forminput">
+                        <label for="value_c">Result=</label>
+                        <input type="text" name="value_c" id="value_c" readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/mathscript.js"></script>
+</body>
+
+</html>
